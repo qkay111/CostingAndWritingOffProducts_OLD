@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.css</file>
+        <file>folder_orange.png</file>
+        <file>icon.png</file>
+    </qresource>
+</RCC>

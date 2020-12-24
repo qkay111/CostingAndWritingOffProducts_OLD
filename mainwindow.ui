@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qrc.qrc">
+    <normaloff>:/icon.png</normaloff>:/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="addPushButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>410</y>
+      <width>195</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="changePushButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>500</y>
+      <width>195</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletePushButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>195</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sortLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>295</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сортировать по :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="sortBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>295</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>времени добавления</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>названию</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ключевому слову</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="sortButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>235</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отсортировать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>275</y>
+      <width>195</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подробнее</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>0</y>
+      <width>1005</width>
+      <height>696</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emptyFolder">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>92</y>
+      <width>512</width>
+      <height>512</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thereIsNotAFile">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>245</y>
+      <width>295</width>
+      <height>195</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Файл
+не
+выбран</string>
+    </property>
+   </widget>
+   <zorder>thereIsNotAFile</zorder>
+   <zorder>addPushButton</zorder>
+   <zorder>changePushButton</zorder>
+   <zorder>deletePushButton</zorder>
+   <zorder>sortLabel</zorder>
+   <zorder>sortBox</zorder>
+   <zorder>sortButton</zorder>
+   <zorder>aboutButton</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>emptyFolder</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newFile"/>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+    <addaction name="closeFile"/>
+   </widget>
+   <widget class="QMenu" name="edit">
+    <property name="title">
+     <string>Редактировать</string>
+    </property>
+    <addaction name="back"/>
+    <addaction name="find"/>
+   </widget>
+   <widget class="QMenu" name="help">
+    <property name="title">
+     <string>Подробнее</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="author"/>
+   </widget>
+   <addaction name="file"/>
+   <addaction name="edit"/>
+   <addaction name="help"/>
+  </widget>
+  <action name="newFile">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+  </action>
+  <action name="openFile">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="closeFile">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="back">
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="author">
+   <property name="text">
+    <string>Автор</string>
+   </property>
+  </action>
+  <action name="find">
+   <property name="text">
+    <string>Найти</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="qrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

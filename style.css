@@ -1,0 +1,78 @@
+QObject {
+    background-color: rgb(33, 33, 33);
+}
+
+QWidget {
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(22, 23, 22, 255), stop:1 rgba(33, 33, 33, 255));
+    color: white;
+}
+
+QMenuBar {
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(85, 127, 91, 255), stop:1 rgba(110, 222, 126, 255));
+    color: black;
+}
+
+QMenu {
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(85, 127, 91, 255), stop:1 rgba(110, 222, 126, 255));
+    color: black;
+}
+
+QListWidget {
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(207, 219, 209, 255), stop:1 rgba(220, 245, 224, 255));
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+QPushButton {
+    border-radius: 20px;
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(85, 127, 91, 255), stop:1 rgba(110, 222, 126, 255));
+    color: black;
+    font-size: 28px;
+}
+
+QPushButton:hover {
+    border: 0px;
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 rgba(78, 212, 97, 255), stop:1 rgba(176, 221, 179, 255));
+    font-size: 30px;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0.471, y1:0.625, x2:1, y2:0,
+        stop:0 #0D2216, stop:1 #399D61);
+    color: white;
+}
+
+QLabel {
+    background-color: #000300;
+    color: white;
+    font-size: 22px;
+}
+
+QComboBox {
+    background-color: #000300;
+    color: white;
+    font-size: 22px;
+}
+
+QLineEdit {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+QTextEdit {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+QMessageBox {
+    background-color: black;
+}
